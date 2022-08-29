@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
+    <head>
+        <script>
+            function greeting(){
+                document.getElementById('demo').innerHTML = 'Hello Thitipong';
+                let name = prompt("Please input your name");
+                window.alert('Hello '+name);
+                document.getElementById('demo').innerHTML = 'Hello ' + name;
+            }
+
+            function changeTored(){
+                document.getElementById('demo').style.color='red';
+            }
+
+            function changeToDog(){
+                document.getElementById('pic').src="https://i.kym-cdn.com/photos/images/original/000/581/408/902.jpg";
+                //document.getElementById('pic').width="300"
+                //document.getElementById('pic').width="300"
+            }
+            function changeToCat(){
+                document.getElementById('pic').src="https://i.pinimg.com/564x/98/fc/88/98fc8863c7e68df57cd7ad7442f0ec18.jpg";
+                //document.getElementById('pic').width="300"
+                //document.getElementById('pic').width="300"
+            }
+        </script>
+    </head>
 <body>
 
-    <img src="https://upload.wikimedia.org/wikipedia/en/8/88/Bugcat_Capoo.jpg" alt="Bugcat_Capoo_image1">
-    <img src="https://upload.wikimedia.org/wikipedia/en/8/88/Bugcat_Capoo.jpg" alt="Bugcat_Capoo_image2">
-    <img src="https://upload.wikimedia.org/wikipedia/en/8/88/Bugcat_Capoo.jpg" alt="Bugcat_Capoo_image3">
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<h2>My First JavaScript</h2>
+
+<button type="button" onclick="greeting()">Click me to display Date and Time.</button>
+
+<button type="button" onclick="changeTored()">Click to change the color.</button>
+
+<img id="pic" src="https://i.pinimg.com/564x/98/fc/88/98fc8863c7e68df57cd7ad7442f0ec18.jpg"><br>
+<button type="button"onclick="changeToDog()">Dog</button>
+<button type="button"onclick="changeToCat()">Cat</button>
+
+<p id="demo"></p>
 
 </body>
 </html>
-
-<!-- test comment -->
